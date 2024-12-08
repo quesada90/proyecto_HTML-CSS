@@ -197,7 +197,7 @@ main {
    width: fit-content;
 }
 
-.proyecto a:hover {
+.projects a:hover {
    background-color: #252525;
    color: aliceblue;
 }
