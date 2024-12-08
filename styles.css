@@ -1,0 +1,187 @@
+:root {
+   font-family: 'Helvetica', sans-serif;
+   color: hsl(0, 0%, 10%);
+
+   /* Escala modular de tipografía con clamp para hacerla responsive */
+   --font-size-xs: clamp(0.875rem, 1vw + 0.5rem, 1rem);  /* 14px - 16px */
+   --font-size-sm: clamp(1rem, 1.2vw + 0.5rem, 1.25rem);  /* 16px - 20px */
+   --font-size-md: clamp(1.25rem, 1.5vw + 0.5rem, 1.5rem); /* 20px - 24px */
+   --font-size-lg: clamp(1.5rem, 2vw + 0.5rem, 2rem);     /* 24px - 32px */
+   --font-size-xl: clamp(2rem, 2.5vw + 0.5rem, 2.5rem);   /* 32px - 40px */
+   --font-size-xxl: clamp(2.5rem, 3vw + 0.5rem, 3.5rem);  /* 40px - 56px */
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+}
+
+a {
+   color: black;
+}
+
+img {
+   max-width: 100%;
+   display: block;
+   height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   margin-top: 0;
+}
+
+/*Header*/
+
+header {
+   position: sticky;
+   width: 100%;
+   top: 0;
+   z-index: 10;
+}
+
+header nav {
+   margin: 0 auto;
+   max-width: 1200px;
+   padding: 1rem 24px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   
+}
+
+.menu {
+   display: flex;
+   gap: 2rem;
+   list-style: none;
+   width: 400px;
+}
+
+nav a {
+   text-decoration: none;
+   color: aliceblue;
+   position: relative;
+}
+
+nav a:hover {
+   text-decoration: underline;
+   color: #e3e3e3;
+}
+
+/*Hero*/
+
+.hero-home {
+   position: relative;
+   background: center url(img/pajaros.jpg);
+   background-size: cover;
+   background-position: center;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: -60px;
+}
+
+main {
+   padding: 1rem 24px;
+}
+
+.main-title {
+   margin: 0 auto;
+   max-width: 1200px;
+   display: flex;
+   align-items: center;
+   color: white;
+   font-size: var(--font-size-xxl);
+}
+
+.go-bottom a {
+   color: white;
+   text-decoration: none;
+   position: absolute;
+   bottom: 20px;
+   transition: all 0.3s;
+   margin: 0 auto;
+}
+
+/*Main*/
+
+#proyectos {
+   margin: 0 auto;
+   max-width: 1200px;
+   padding: 8rem 0;
+   display: flex;
+   flex-direction: column;
+   gap: 8rem;
+}
+
+.proyecto {
+   display: flex;
+   flex-direction: row;
+   gap: 2rem;
+   flex: 1 1 0;
+}
+
+.proyecto-inv {
+   display: flex;
+   flex-direction: row-reverse;
+   gap: 2rem;
+}
+
+.img-proyecto {
+   width: 50vw;
+   max-width: 500px;
+}
+
+.info-proyecto {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+}
+
+form {
+   display: flex;
+   margin: 0 auto;
+   padding: 4rem 0 8rem 0;
+   max-width: 1200px;
+   flex-direction: row;
+   justify-content: space-between;
+   gap: 4rem;
+}
+
+form div {
+   display: flex;
+   flex: 1 1 0;
+}
+
+.inputs {
+   display: flex;
+   flex-direction: column;
+   gap: 1.5rem;
+
+}
+
+/*Footer*/
+
+footer {
+   background-color: hsl(0, 0%, 10%);
+}
+
+footer nav {
+   margin: 0 auto;
+   max-width: 1200px;
+   padding: 4rem 24px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   color: aliceblue;
+   text-decoration: none;
+}
+
+
+footer ul {
+   display: flex;
+   gap: 32px; 
+   list-style: none;
+}
