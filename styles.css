@@ -32,18 +32,12 @@ h1, h2, h3, h4, h5, h6 {
    margin-top: 0;
 }
 
-h1 {
-   font-size: var(--font-size-xxl);
-}
-
-h2 {
-   font-size: var(--font-size-xl);
-}
-
-h5 {
-   font-size: var(--font-size-xs);
-   color: grey;
-}
+h1 { font-size: var(--font-size-xxl); }
+h2 { font-size: var(--font-size-xl); }
+h3 { font-size: var(--font-size-lg);}
+h4 { font-size: var(--font-size-md); }
+h5 { font-size: var(--font-size-sm); }
+h6 { font-size: var(--font-size-xs); color: grey; text-transform: uppercase; }
 
 /*Header*/
 
@@ -122,6 +116,7 @@ nav a:hover {
    margin: 0 auto;
    max-width: 1200px;
    display: flex;
+   flex-direction: column;
    align-items: center;
    color: white;
    text-transform: uppercase;
@@ -150,6 +145,7 @@ nav a:hover {
 
 .go-bottom a {
    color: white;
+   font-size: var(--font-size-xl);
    text-decoration: none;
    position: absolute;
    bottom: 20px;
@@ -187,6 +183,12 @@ main {
 .img-proyecto {
    width: 50vw;
    max-width: 500px;
+}
+
+.img-detail {
+   width: 50vw;
+   max-width: 500px;
+   box-shadow: 16px 16px 0 hsl(0, 0%, 75%);
 }
 
 .projects a {
