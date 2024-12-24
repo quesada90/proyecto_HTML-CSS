@@ -39,7 +39,7 @@ h4 { font-size: var(--font-size-md); }
 h5 { font-size: var(--font-size-sm); }
 h6 { font-size: var(--font-size-xs); color: grey; text-transform: uppercase; }
 
-/*Header*/
+/*Header---------------------------*/
 
 header {
    position: sticky;
@@ -72,11 +72,11 @@ nav a {
    text-decoration: none;
    position: relative;
    color: aliceblue;
-}
 
-nav a:hover {
-   text-decoration: underline;
-   color: #e3e3e3;
+   &:hover {
+      text-decoration: underline;
+      color: aliceblue;
+   }
 }
 
 .nav-dark a {
@@ -88,8 +88,7 @@ nav a:hover {
    color: #252525;
 }
 
-
-/*Hero*/
+/*Hero---------------------------*/
 
 .hero-home {
    position: relative;
@@ -143,6 +142,34 @@ nav a:hover {
    gap: 1rem;
 }
 
+.hero-contact {
+   margin: 0 auto;
+   max-width: 1200px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 8rem;
+}
+
+.contact-info {
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+}
+
+.contact-info ul {
+   display: flex;
+   flex-direction: column;
+   gap: 0.3rem;
+   width: fit-content;
+}
+
+.contact-title{
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+}
+
 .go-bottom a {
    color: white;
    font-size: var(--font-size-xl);
@@ -153,7 +180,7 @@ nav a:hover {
    margin: 0 auto;
 }
 
-/*Main*/
+/*Main---------------------------*/
 
 main {
    margin: 0 auto;
@@ -174,11 +201,17 @@ main {
    flex: 1 1 0;
 }
 
-.proyecto-inv {
+.projects>*:nth-child(2n) {
    display: flex;
    flex-direction: row-reverse;
    gap: 4rem;
 }
+
+/* .proyecto-inv {
+   display: flex;
+   flex-direction: row-reverse;
+   gap: 4rem;
+} */
 
 .img-proyecto {
    width: 50vw;
@@ -211,6 +244,8 @@ main {
    gap: 2rem;
 }
 
+/*Contact---------------------------*/
+
 form {
    display: flex;
    margin: 0 auto;
@@ -230,10 +265,35 @@ form div {
    display: flex;
    flex-direction: column;
    gap: 1.5rem;
-
 }
 
-/*Footer*/
+label{
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+}
+
+input, textarea {
+   padding: 0.5rem;
+   border: 1px solid black;
+   border-radius: 0.25rem;
+}
+
+#submit{
+   padding: 1rem 2rem;
+   border: 2px solid black;
+   text-decoration: none;
+   border-radius: 0.5rem;
+   width: fit-content;
+   background-color: white;
+}
+
+#submit:hover {
+   background-color: #252525;
+   color: aliceblue;
+}
+
+/*Footer---------------------------*/
 
 footer {
    background-color: hsl(0, 0%, 10%);
@@ -249,7 +309,6 @@ footer nav {
    color: aliceblue;
    text-decoration: none;
 }
-
 
 footer ul {
    display: flex;

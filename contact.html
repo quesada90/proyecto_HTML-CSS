@@ -9,8 +9,9 @@
    
 </head>
 <body>
+   <!--Header-->
    <header>
-      <nav>
+      <nav class="nav-dark">
          <a href="index.html" class="logo">
             Javier <br> Quesada
          </a>
@@ -22,18 +23,42 @@
          </ul>
       </nav>
    </header>
-   <!--Hero-->
-   <section class="hero-home">
-      <div class="main-title">
-         <h1>Mi portafolio</h1>
-      </div>
-   </section>
 
+   <!--Hero-->
+      <section class="hero-contact">
+         <div  class="contact-info">
+            <ul>
+               <il><h6>Address</h6></il>
+               <il>1234 Main Street</il>
+               <il>City, State 12345</il>
+               <il>Country</il>
+            </ul>
+            <ul>
+               <il><h6>Contact</h6></il>
+               <il>+34 123 456 789</il>
+               <il>info@my-portfolio</il>
+            </ul>
+            <ul>
+               <il><h6>Opening hours</h6></il>
+               <il>Monday to Friday: 9am -6pm</il>
+            </ul>
+            <ul>
+               <il><h6>Follow me</h6></il>
+               <il>Fa Tw In Li</il>
+            </ul>
+         </div>
+         <div  class="project-description">
+            <img src="img/sea.jpg" alt="">
+         </div>
+      </section>
+      
    <!-- Contenido -->
    <main>
       <form action="contact.php">
-         <div>
+         <div class="contact-title">
             <h2>Contacto</h2>
+            <p>Feel free to contact me for any inquiries or collaborations. I will get back to you as soon as possible.</p>
+            <p>For business inquiries, please contact me at info@my-portfolio.com</p>
          </div>
          <div class="inputs">
             <label for="nombre">Nombre
@@ -49,9 +74,9 @@
                <input type="tel" name="phone" id="phone">
             </label>
             <label for="comentario">Añade un comentario
-               <input type="textarea" name="comentario" id="comentario">
+               <textarea type="textarea" name="comentario" id="comentario"> </textarea>
             </label>
-            <input type="submit" name="submit" id="submit" value="Enviar">
+            <input type="submit" name="submit" id="submit" value="Enviar →">
          </div>
       </form>
    </main>
@@ -69,6 +94,5 @@
          </ul>
       </nav>
    </footer>
-   <!---->
 </body>
 </html>
