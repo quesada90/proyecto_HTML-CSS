@@ -92,7 +92,7 @@ nav a {
 
 .hero-home {
    position: relative;
-   background: center url(img/pajaros.jpg);
+   background: center url(../img/pajaros.jpg);
    background-size: cover;
    background-position: center;
    height: 100vh;
@@ -286,6 +286,7 @@ input, textarea {
    border-radius: 0.5rem;
    width: fit-content;
    background-color: white;
+   cursor: pointer;
 }
 
 #submit:hover {
