@@ -1,0 +1,152 @@
+/*Media Queries desktop first---------------*/
+@media only screen and (max-width: 640px) {
+   header nav {
+      align-items: start;
+      padding: 1rem 1rem;
+   }
+   
+   .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+   }
+
+   .hero-home {
+      height: 100vh;
+      margin-top: -155px;
+   }
+
+   .hero-project {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 2rem;
+   }
+
+   .hero-contact {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 2rem;
+      margin-bottom: 2rem;
+   }
+
+   .proyecto {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding: 0 1rem;
+   }
+
+   .projects>*:nth-child(2n) {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding: 0 1rem;
+   }
+
+   .img-proyecto {
+      width: 100%;
+      max-width: 500px;
+   }
+
+   .info-proyecto {
+      gap: 1rem;
+   }
+
+   .projects a {
+      text-align: center;
+      width: 100%;
+   }
+
+   .project-intro {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+      padding: 4rem 1rem;
+   }
+
+   .project-description {
+      width: 100%;
+   }
+
+   .img-detail {
+      width: 100%;
+      max-width: 500px;
+      box-shadow: 0 16px 0 hsl(0, 0%, 75%);
+   }
+
+   .contact-info {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 0 1rem;
+   }
+
+   form {
+      flex-direction: column;
+      padding: 2rem 1rem 6rem 1rem;
+      
+   }
+
+   #submit {
+      text-align: center;
+      width: 100%;
+   }
+
+   footer nav{
+      flex-direction: column;
+      gap: 2rem;
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+   }
+
+   footer ul {
+      display: flex;
+      justify-content: space-between;
+   }
+}
+
+@media only screen and (max-width: 768px) {
+   header nav {
+      padding: 1rem 1rem;
+   }
+
+   .proyecto {
+      gap: 2rem;
+      padding: 0 1rem;
+   }
+
+   .projects>*:nth-child(2n) {
+      gap: 2rem;
+   }
+}
+
+@media only screen and (max-width: 1024px) {
+   header nav {
+      padding: 1rem 1rem;
+   }
+
+   .proyecto {
+      gap: 2rem;
+      padding: 0 1rem;
+   }
+
+   .projects>*:nth-child(2n) {
+      gap: 2rem;
+   }
+}
+
+@media only screen and (max-width: 1280px) {
+   header nav {
+      padding: 1rem 1rem;
+   }
+
+   .proyecto {
+      gap: 2rem;
+      padding: 0 1rem;
+   }
+
+   .projects>*:nth-child(2n) {
+      gap: 2rem;
+   }
+}

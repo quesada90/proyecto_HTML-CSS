@@ -90,18 +90,6 @@ nav a {
 
 /*Hero---------------------------*/
 
-.hero-home {
-   position: relative;
-   background: center url(../img/pajaros.jpg);
-   background-size: cover;
-   background-position: center;
-   height: 100vh;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   margin-top: -70px;
-}
-
 .hero-project {
    margin: 0 auto;
    max-width: 1200px;
@@ -109,16 +97,6 @@ nav a {
    justify-content: space-between;
    align-items: center;
    margin: 0 auto;
-}
-
-.main-title {
-   margin: 0 auto;
-   max-width: 1200px;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   color: white;
-   text-transform: uppercase;
 }
 
 .project-intro {
@@ -142,43 +120,6 @@ nav a {
    gap: 1rem;
 }
 
-.hero-contact {
-   margin: 0 auto;
-   max-width: 1200px;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   margin-bottom: 8rem;
-}
-
-.contact-info {
-   display: flex;
-   flex-direction: column;
-   gap: 2rem;
-}
-
-.contact-info ul {
-   display: flex;
-   flex-direction: column;
-   gap: 0.3rem;
-   width: fit-content;
-}
-
-.contact-title{
-   display: flex;
-   flex-direction: column;
-   gap: 1rem;
-}
-
-.go-bottom a {
-   color: white;
-   font-size: var(--font-size-xl);
-   text-decoration: none;
-   position: absolute;
-   bottom: 20px;
-   transition: all 0.3s;
-   margin: 0 auto;
-}
 
 /*Main---------------------------*/
 
@@ -207,12 +148,6 @@ main {
    gap: 4rem;
 }
 
-/* .proyecto-inv {
-   display: flex;
-   flex-direction: row-reverse;
-   gap: 4rem;
-} */
-
 .img-proyecto {
    width: 50vw;
    max-width: 500px;
@@ -224,6 +159,13 @@ main {
    box-shadow: 16px 16px 0 hsl(0, 0%, 75%);
 }
 
+.info-proyecto {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   gap: 2rem;
+}
+
 .projects a {
    padding: 1rem 2rem;
    border: 2px solid black;
@@ -233,63 +175,6 @@ main {
 }
 
 .projects a:hover {
-   background-color: #252525;
-   color: aliceblue;
-}
-
-.info-proyecto {
-   display: flex;
-   justify-content: center;
-   flex-direction: column;
-   gap: 2rem;
-}
-
-/*Contact---------------------------*/
-
-form {
-   display: flex;
-   margin: 0 auto;
-   padding: 4rem 0 8rem 0;
-   max-width: 1200px;
-   flex-direction: row;
-   justify-content: space-between;
-   gap: 4rem;
-}
-
-form div {
-   display: flex;
-   flex: 1 1 0;
-}
-
-.inputs {
-   display: flex;
-   flex-direction: column;
-   gap: 1.5rem;
-}
-
-label{
-   display: flex;
-   flex-direction: column;
-   gap: 0.5rem;
-}
-
-input, textarea {
-   padding: 0.5rem;
-   border: 1px solid black;
-   border-radius: 0.25rem;
-}
-
-#submit{
-   padding: 1rem 2rem;
-   border: 2px solid black;
-   text-decoration: none;
-   border-radius: 0.5rem;
-   width: fit-content;
-   background-color: white;
-   cursor: pointer;
-}
-
-#submit:hover {
    background-color: #252525;
    color: aliceblue;
 }
