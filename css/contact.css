@@ -84,6 +84,10 @@ input, textarea {
    border-radius: 0.25rem;
 }
 
+textarea {
+   height: 6rem;
+}
+
 #submit{
    padding: 1rem 2rem;
    border: 2px solid black;
