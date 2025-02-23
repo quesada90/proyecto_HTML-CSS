@@ -5,9 +5,13 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
 
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+   
    <link rel="stylesheet" href="css/styles.css">
    <link rel="stylesheet" href="css/index.css">
    <link rel="stylesheet" href="css/responsive.css">
+
+   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
 </head>
 
@@ -77,6 +81,20 @@
             </div>
          </div>
       </section>
+
+      <!--Image gallery-->
+      <section class="gallery">
+         <h2>Gallery</h2>
+         <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Images will be injected here dynamically -->
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
    </main>
 
    <!--Footer-->
@@ -92,6 +110,10 @@
          </ul>
       </nav>
    </footer>
-   <!---->
+   
+   <!--Scripts & Swiper-->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+   <script type="module" src="js/index.js"></script>
+
 </body>
 </html>

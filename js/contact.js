@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     event.preventDefault(); // Prevent form submission initially
     let isValid = true;
 
-    // Select all input fields and textarea
+    // Seleccionar todos los inputs y textareas
     const inputs = document.querySelectorAll("input, textarea");
 
     inputs.forEach((input) => {
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
       errorElement.style.color = "red";
       errorElement.style.fontSize = "0.8em";
 
-      // Remove existing error message if any
+      // Remueve el mensaje de error si existe
       if (
         input.nextElementSibling &&
         input.nextElementSibling.classList.contains("error-message")
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 
-    // Email validation
+    // Vaidación de email
     const emailInput = document.getElementById("email");
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
       isValid = false;
     }
 
-    // If form is valid, submit it
+    // Si el formulario es válido, se envía
     if (isValid) {
       form.submit();
     }
