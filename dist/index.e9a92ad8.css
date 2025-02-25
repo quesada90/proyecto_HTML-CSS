@@ -1,0 +1,119 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes titleFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes translate {
+  from {
+    transform: translateY(50%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.hero-home {
+  background: url("pajaros.ae13b23e.jpg") center / cover;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: -70px;
+  display: flex;
+  position: relative;
+}
+
+.main-title {
+  color: #fff;
+  text-transform: uppercase;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.main-title h1 {
+  font-size: var(--font-size-xxl);
+  margin-bottom: 1rem;
+  animation: .6s ease-in titleFadeIn;
+}
+
+.go-bottom a {
+  color: #fff;
+  font-size: var(--font-size-xl);
+  margin: 0 auto;
+  text-decoration: none;
+  transition: all .3s;
+  animation: 1s ease-in-out 1.5s infinite alternate-reverse translate;
+  position: absolute;
+  bottom: 20px;
+}
+
+.projects {
+  flex-direction: column;
+  gap: 8rem;
+  padding: 8rem 0;
+  display: flex;
+}
+
+.proyecto {
+  flex-direction: row;
+  flex: 1 1 0;
+  gap: 4rem;
+  animation: 1s ease-in-out fadeIn;
+  display: flex;
+}
+
+.projects > :nth-child(2n) {
+  flex-direction: row-reverse;
+  gap: 4rem;
+  display: flex;
+}
+
+.gallery {
+  text-align: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 4rem;
+  display: flex;
+}
+
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  background-position: center;
+  background-size: cover;
+  width: 500px;
+}
+
+.swiper-wrapper img {
+  width: 100%;
+  height: 300px;
+  display: block;
+}
+/*# sourceMappingURL=index.e9a92ad8.css.map */

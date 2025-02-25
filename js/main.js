@@ -6,7 +6,7 @@ async function fetchImages() {
   const KEYWORD = "nature";
   const IMAGE_COUNT = 10;
 
-  const url = `https://api.unsplash.com/photos/random?query=${KEYWORD}&count=${IMAGE_COUNT}&fit=clamp&crop=focalpoint
+  const url = `https://api.unsplash.com/photos/random?query=${KEYWORD}&count=${IMAGE_COUNT}&fit=clip&crop=focalpoint
 &client_id=${ACCESS_KEY}`;
 
   try {

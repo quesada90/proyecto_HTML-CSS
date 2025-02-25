@@ -1,0 +1,79 @@
+@keyframes titleFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-title, .project-intro {
+  animation: .6s ease-in titleFadeIn;
+}
+
+.projects {
+  flex-direction: column;
+  gap: 8rem;
+  padding: 8rem 0;
+  display: flex;
+}
+
+.proyecto {
+  flex-direction: row;
+  flex: 1 1 0;
+  gap: 4rem;
+  display: flex;
+}
+
+.projects > :nth-child(2n) {
+  flex-direction: row-reverse;
+  gap: 4rem;
+  display: flex;
+}
+
+.img-proyecto {
+  width: 50vw;
+  max-width: 500px;
+  animation: .6s ease-in titleFadeIn;
+}
+
+.img-detail {
+  width: 50vw;
+  max-width: 500px;
+  transition: box-shadow .3s;
+  box-shadow: 8px 8px #bfbfbf;
+}
+
+.img-detail:hover {
+  box-shadow: 16px 16px 8px #bfbfbf;
+}
+
+.projects a {
+  border: 2px solid #000;
+  border-radius: .5rem;
+  width: fit-content;
+  padding: 1rem 2rem;
+  text-decoration: none;
+}
+
+.projects a:hover {
+  color: #f0f8ff;
+  background-color: #252525;
+}
+
+.info-proyecto {
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  animation: .6s ease-in titleFadeIn;
+  display: flex;
+}
+/*# sourceMappingURL=projects.8f2a9608.css.map */
