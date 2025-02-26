@@ -1,5 +1,5 @@
 // Import your Unsplash API key from another file
-import { ACCESS_KEY } from "./config.js";
+import { ACCESS_KEY } from "../../constants/config.js";
 
 // Fetch images from Unsplash API
 async function fetchImages() {
