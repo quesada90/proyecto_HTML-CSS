@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+
+   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+   
+   <link rel="stylesheet" href="css/styles.css">
+   <link rel="stylesheet" href="css/index.css">
+   <link rel="stylesheet" href="css/responsive.css">
+
+   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+   <!--Header-->
+   <header>
+      <nav>
+         <a href="index.html" class="logo">
+            Javier <br> Quesada
+         </a>
+         <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+         </ul>
+      </nav>
+   </header>
+
+   <!--Hero-->
+   <section class="hero-home">
+      <div class="main-title">
+         <h1>This is <br>my portfolio</h1>
+         <div class="go-bottom"><a href="#proyectos">⇩</a></div>
+      </div>
+   </section>
+
+   <!-- Main content -->
+   <main id="app">
+
+      <!-- Projects -->
+      <section id="projects" class="projects">
+         <div v-for="project in projects" :key="project.title" class="proyecto">
+            <img :src="project.image" alt="" class="img-proyecto">
+            <div class="info-proyecto">
+               <div>
+                  <h6>{{ project.category }}</h6>
+                  <h2>{{ project.title }}</h2>
+               </div>
+               <p>{{ project.description }}</p>
+               <a :href="project.link">Ver proyecto →</a>
+            </div>
+         </div>
+      </section>
+
+      <!--Image gallery-->
+      <section class="gallery">
+         <h2>Gallery</h2>
+         <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Images will be injected here dynamically -->
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+   </main>
+
+   <!--Footer-->
+   <footer>
+      <nav>
+         <div>
+            <a href="index.html">This is my portfolio</a>
+            <br>&copy; 2024
+         </div>
+         <ul>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Terms of use</a></li>
+         </ul>
+      </nav>
+   </footer>
+   
+   <!--Scripts & Swiper-->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+   <script type="module" src="js/main.js"></script>
+
+   <script>
+      const { createApp } = Vue;
+
+      createApp({
+         data() {
+            return {
+               projects: [
+                  {
+                     category: 'Aventura',
+                     title: 'Diarios de un viaje',
+                     description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero blanditiis magni aliquid adipisci deserunt nesciunt! Quas possimus saepe perspiciatis. Omnis accusamus accusantium consectetur doloremque libero? Officiis incidunt facilis pariatur quis?',
+                     image: 'img/notas.jpg',
+                     link: 'projects.html'
+                  },
+                  {
+                     category: 'Realismo mágico',
+                     title: 'Entre el mar y la arena',
+                     description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero blanditiis magni aliquid adipisci deserunt nesciunt! Quas possimus saepe perspiciatis. Omnis accusamus accusantium consectetur doloremque libero? Officiis incidunt facilis pariatur quis?',
+                     image: 'img/marypiedras.jpg',
+                     link: 'projects.html'
+                  },
+                  {
+                     category: 'Thriller',
+                     title: 'El testigo silencioso',
+                     description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero blanditiis magni aliquid adipisci deserunt nesciunt! Quas possimus saepe perspiciatis. Omnis accusamus accusantium consectetur doloremque libero? Officiis incidunt facilis pariatur quis?',
+                     image: 'img/caminando.jpg',
+                     link: 'projects.html'
+                  }
+               ]
+            }
+         }
+      }).mount('#app');
+   </script>
+
+</body>
+</html>
